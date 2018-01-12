@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match its empty snapshot 1`] = `
+<styled.div>
+  <h1>
+    Hello World 📦 🚀
+  </h1>
+</styled.div>
+`;
