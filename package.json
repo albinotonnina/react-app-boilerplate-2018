@@ -2,13 +2,16 @@
   "name": "deltagraph",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "author": "Albino Tonnina",
   "scripts": {
     "start": "parcel src/index.html --no-cache",
     "test": "jest",
     "test:updateSnapshots": "jest --updateSnapshot",
     "build": "parcel build src/index.html --no-cache --public-url ./ ",
     "eslint": "eslint ./src"
+  },
+  "engines": {
+    "node": ">=8"
   },
   "dependencies": {
     "babel-plugin-dynamic-import-node": "^1.2.0",
@@ -47,5 +50,16 @@
       "enzyme-to-json/serializer"
     ],
     "setupTestFrameworkScriptFile": "<rootDir>/config/test.setup.js"
-  }
+  },
+  "keywords": [
+    "react",
+    "bootstrap",
+    "redux",
+    "react-router",
+    "express",
+    "hot loading",
+    "boilerplate"
+  ],
+  "repository": "albinotonnina/react-app-boilerplate-2018",
+  "license": "MIT"
 }
