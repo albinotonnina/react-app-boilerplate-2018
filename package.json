@@ -8,7 +8,9 @@
     "test": "jest",
     "test:updateSnapshots": "jest --updateSnapshot",
     "build": "parcel build src/index.html --no-cache --public-url ./ ",
-    "eslint": "eslint ./src"
+    "eslint": "eslint ./src",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=8"
@@ -18,11 +20,12 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "parcel-bundler": "^1.4.1",
+    "parcel-bundler": "^1.6.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "styled-components": "^2.4.0"
+    "react-dom": "^16.2.1",
+    "styled-components": "^2.4.0",
+    "snyk": "^1.116.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.1.2",
@@ -61,5 +64,6 @@
     "boilerplate"
   ],
   "repository": "albinotonnina/react-app-boilerplate-2018",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
